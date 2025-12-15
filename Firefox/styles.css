@@ -333,20 +333,21 @@ ytd-app[frosted-glass-exp] #guide-spacer,
     bottom: 48px !important;
 }
 .ytp-delhi-modern .ytp-chrome-controls {
-    height: 44px !important;
-    line-height: 44px !important;
+    height: 48px !important;
+    line-height: 48px !important;
 }
 .ytp-delhi-modern .ytp-chrome-bottom {
-    height: 44px !important;
+    height: 48px !important;
 }
 .ytp-delhi-modern .ytp-chrome-controls .ytp-play-button {
-    height: 40px !important;
-    width: 40px !important;
+    height: 48px !important;
+    width: 48px !important;
 }
 .ytp-delhi-modern .ytp-chrome-controls .ytp-play-button svg {
     height: 24px !important;
     width: 24px !important;
 }
+.ytp-delhi-modern-icons .ytp-chrome-controls svg,
 .ytp-delhi-modern-icons .ytp-chrome-controls .ytp-play-button svg {
     padding: var(--yt-delhi-pill-top-height,12px) !important;
 }
@@ -419,16 +420,16 @@ ytd-app[frosted-glass-exp] #guide-spacer,
     background-color: red !important;
 }
 .ytp-delhi-modern {
-    --yt-delhi-pill-height: 40px !important;
-    --yt-delhi-pill-top-height: 8px !important;
-    --yt-delhi-big-mode-bottom-controls-height: 40px !important;
-    --yt-delhi-big-mode-pill-height: 40px !important;
+    --yt-delhi-pill-height: 48px !important;
+    --yt-delhi-pill-top-height: 12px !important;
+    --yt-delhi-big-mode-bottom-controls-height: 48px !important;
+    --yt-delhi-big-mode-pill-height: 48px !important;
 }
 .ytp-delhi-modern.ytp-big-mode .ytp-settings-button.ytp-hd-quality-badge::after {
     font-size: 7px !important;
 }
 .ytp-delhi-modern.ytp-big-mode .ytp-play-button {
-    height: 40px !important;
+    height: 48px !important;
     width: 48px !important;
 }
 .ytp-delhi-modern.ytp-big-mode .ytp-play-button > svg {
