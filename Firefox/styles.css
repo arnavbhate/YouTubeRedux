@@ -332,6 +332,17 @@ ytd-app[frosted-glass-exp] #guide-spacer,
 .ytp-delhi-modern .ytp-chrome-bottom {
     height: 40px !important;
 }
+.ytp-delhi-modern .ytp-chrome-controls .ytp-play-button {
+    height: 40px !important;
+    width: 40px !important;
+}
+.ytp-delhi-modern .ytp-chrome-controls .ytp-play-button svg {
+    height: 24px !important;
+    width: 24px !important;
+}
+.ytp-delhi-modern-icons .ytp-chrome-controls .ytp-play-button svg {
+    padding: var(--yt-delhi-pill-top-height,12px) !important;
+}
 .ytp-delhi-modern .ytp-left-controls > .ytp-button,
 .ytp-delhi-modern .ytp-left-controls .ytp-volume-area,
 .ytp-delhi-modern .ytp-right-controls,
