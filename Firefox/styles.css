@@ -402,6 +402,12 @@ ytd-app[frosted-glass-exp] #guide-spacer,
     height: 40px !important;
     margin: 0 !important;
 }
+.ytp-fullscreen-grid-active.html5-video-player.ended-mode .html5-endscreen {
+    display: unset !important;
+}
+.ytp-fullscreen-grid {
+    display: none !important;
+}
 .ytp-delhi-modern [sponsorblock-category="poi_highlight"] {
     background-color: red !important;
 }
