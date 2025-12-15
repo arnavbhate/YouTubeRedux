@@ -292,6 +292,13 @@ ytd-app[frosted-glass-exp] #guide-spacer,
 .smartimation__border {
     display: none;
 }
+:root {
+    --yt-frosted-glass-backdrop-filter-override: none !important;
+    --yt-spec-overlay-background-medium: rgba(28, 28, 28, 0.9) !important;
+    --yt-spec-overlay-background-medium-light: rgba(28, 28, 28, 0.9) !important;
+    --yt-spec-overlay-background-light: rgba(28, 28, 28, 0.9) !important;
+    --yt-spec-overlay-background-extra-light: rgba(28, 28, 28, 0.9) !important;
+}
 /* 2025 mono video controls */
 .ytp-xs-mono-button-style > .ytp-time-wrapper {
     background: none !important;
