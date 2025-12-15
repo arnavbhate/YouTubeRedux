@@ -635,6 +635,9 @@ ytd-video-primary-info-renderer > [button-renderer] yt-icon {
 .ytp-panel sup {
     color: red;
 }
+.ytp-progress-list {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+}
 .ytp-swatch-background-color {
     background-color: #f00 !important;
     background-image: none !important;
