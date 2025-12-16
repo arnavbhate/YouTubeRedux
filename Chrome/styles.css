@@ -366,6 +366,9 @@ ytd-app[frosted-glass-exp] #guide-spacer,
 .ytp-delhi-modern .ytp-prev-button {
     order: -1;
 }
+.ytp-delhi-modern .ytp-next-button.ytp-playlist-ui {
+    display: block !important;
+}
 .ytp-delhi-modern .ytp-left-controls > *,
 .ytp-delhi-modern .ytp-right-controls {
     margin-top: 0px !important;
