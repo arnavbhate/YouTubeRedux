@@ -478,6 +478,46 @@ ytd-app[frosted-glass-exp] #guide-spacer,
     -ms-transform: translateX(15.6px) !important;
     transform: translateX(15.6px);
 }
+.ytp-delhi-modern .ytp-menuitem-toggle-checkbox {
+    height: 14px !important;
+    width: 36px !important;
+    float: right !important;
+    position: relative !important;
+    border-radius: 14px !important;
+    background: rgba(255,255,255,.3) !important;
+    -webkit-transition: all .08s cubic-bezier(.4,0,1,1) !important;
+    transition: all .08s cubic-bezier(.4,0,1,1) !important;
+    -webkit-transform: scale(1) !important;
+    -ms-transform: scale(1) !important;
+    transform: scale(1) !important;
+}
+.ytp-delhi-modern .ytp-menuitem[aria-disabled="true"] .ytp-menuitem-toggle-checkbox {
+    opacity: .3 !important;
+}
+.ytp-delhi-modern .ytp-menuitem[aria-checked="true"] .ytp-menuitem-toggle-checkbox {
+  background: #f00 !important;
+}
+.ytp-delhi-modern .ytp-menuitem-toggle-checkbox::after {
+    content: "" !important;
+    position: absolute !important;
+    left: -1px !important;
+    top: -0.5px !important;
+    height: 20px !important;
+    width: 20px !important;
+    border-radius: 20px !important;
+    margin-top: -3px !important;
+    background-color: #bdbdbd !important;
+    -webkit-box-shadow: 0 1px 5px 0 rgba(0,0,0,.6) !important;
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,.6) !important;
+    -webkit-transition: all .08s cubic-bezier(.4,0,1,1) !important;
+    transition: all .08s cubic-bezier(.4,0,1,1) !important;
+}
+.ytp-delhi-modern .ytp-menuitem[aria-checked="true"] .ytp-menuitem-toggle-checkbox::after {
+    background-color: #fff !important;
+    -webkit-transform: translateX(16px) !important;
+    -ms-transform: translateX(16px) !important;
+    transform: translateX(16px) !important;
+}
 .ytp-delhi-modern [sponsorblock-category="poi_highlight"] {
     background-color: red !important;
 }
@@ -533,6 +573,24 @@ ytd-app[frosted-glass-exp] #guide-spacer,
     -webkit-transform: translateX(19.5px) !important;
     -ms-transform: translateX(19.5px) !important;
     transform: translateX(19.5px) !important;
+}
+.ytp-delhi-modern.ytp-fullscreen .ytp-menuitem-toggle-checkbox {
+    height: 21px !important;
+    width: 54px !important;
+    border-radius: 21px !important;
+}
+.ytp-delhi-modern.ytp-fullscreen .ytp-menuitem-toggle-checkbox::after {
+    left: -2px !important;
+    top: -1px !important;
+    height: 30px !important;
+    width: 30px !important;
+    border-radius: 30px !important;
+    margin-top: calc(divide(sub(21px, 30px), 2)) !important;
+}
+.ytp-delhi-modern.ytp-fullscreen .ytp-menuitem[aria-checked="true"] .ytp-menuitem-toggle-checkbox::after {
+    -webkit-transform: translateX(24px) !important;
+    -ms-transform: translateX(24px) !important;
+    transform: translateX(24px) !important;
 }
 
 /* turned off due to max() not being supported in old browsers
