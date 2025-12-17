@@ -423,6 +423,12 @@ ytd-app[frosted-glass-exp] #guide-spacer,
 .ytp-fullscreen-grid {
     display: none !important;
 }
+.ytp-delhi-modern .ytp-contextmenu .ytp-menuitem-toggle-checkbox {
+    width: 24px !important;
+}
+.ytp-delhi-modern .ytp-contextmenu .ytp-menuitem[aria-checked="true"] .ytp-menuitem-toggle-checkbox {
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAyNCAyNCIgdmVyc2lvbj0iMS4xIj48cGF0aCBkPSJNOSAxNi4yTDQuOCAxMmwtMS40IDEuNEw5IDE5IDIxIDdsLTEuNC0xLjRMOSAxNi4yeiIgZmlsbD0iI2ZmZiIgLz48L3N2Zz4=) !important;
+}
 .ytp-delhi-modern [sponsorblock-category="poi_highlight"] {
     background-color: red !important;
 }
