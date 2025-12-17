@@ -399,6 +399,10 @@ ytd-app[frosted-glass-exp] #guide-spacer,
 .ytp-progress-bar:hover .ytp-scrubber-button {
     opacity: 1 !important;
 }
+.ytp-delhi-horizontal-volume-controls .ytp-volume-slider-handle::before,
+.ytp-delhi-horizontal-volume-controls .ytp-volume-slider-handle::after {
+    height: 3px !important;
+}
 .ytp-delhi-modern .ytp-tooltip-keyboard-shortcut {
     display: none !important;
 }
@@ -560,6 +564,10 @@ ytd-app[frosted-glass-exp] #guide-spacer,
 .ytp-delhi-modern.ytp-fullscreen .ytp-scrubber-button {
     height: 20px !important;
     width: 20px !important;
+}
+.ytp-fullscreen .ytp-delhi-horizontal-volume-controls .ytp-volume-slider-handle::before,
+.ytp-fullscreen .ytp-delhi-horizontal-volume-controls .ytp-volume-slider-handle::after {
+    height: 4px !important;
 }
 .ytp-delhi-modern.ytp-fullscreen .ytp-autonav-toggle-button {
     height: 18px !important;
