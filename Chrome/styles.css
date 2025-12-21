@@ -342,10 +342,21 @@ ytd-app[frosted-glass-exp] #guide-spacer,
 .ytp-delhi-modern .ytp-chrome-bottom .ytp-button {
     height: var(--yt-delhi-pill-height, 48px) !important;
     width: var(--yt-delhi-pill-height, 48px) !important;
+    opacity: 0.9 !important;
 }
-.ytp-delhi-modern-icons .ytp-chrome-controls svg,
-.ytp-delhi-modern-icons .ytp-chrome-controls .ytp-play-button svg {
-    padding: var(--yt-delhi-pill-top-height, 12px) !important;
+.ytp-delhi-modern .ytp-chrome-bottom .ytp-button:hover {
+    opacity: 1 !important;
+}
+.ytp-delhi-modern .ytp-chrome-bottom .ytp-right-controls .ytp-button {
+    padding: 0 2px !important;
+}
+.ytp-delhi-modern .ytp-subtitles-button-icon {
+    height: 100% !important;
+}
+.ytp-delhi-modern .ytp-chrome-bottom .ytp-button svg {
+    height: 100% !important;
+    width: 100% !important;
+    padding: 0 !important;
 }
 .ytp-delhi-modern .ytp-volume-area {
     margin: 0 !important;
@@ -367,8 +378,17 @@ ytd-app[frosted-glass-exp] #guide-spacer,
 .ytp-delhi-modern .ytp-prev-button {
     order: -1;
 }
+.ytp-delhi-modern .ytp-play-button,
+.ytp-delhi-modern .ytp-play-button svg {
+    padding: 0 1px !important;
+}
 .ytp-delhi-modern .ytp-play-button-playlist ~ .ytp-next-button {
     display: inline-block !important;
+}
+.ytp-delhi-modern .ytp-button.ytp-volume-icon svg {
+    height: 24px !important;
+    width: 24px !important;
+    padding: 12px !important;
 }
 .ytp-delhi-modern .ytp-left-controls > *,
 .ytp-delhi-modern .ytp-right-controls {
@@ -482,7 +502,7 @@ ytd-app[frosted-glass-exp] #guide-spacer,
     -ms-transform: translateX(15.6px) !important;
     transform: translateX(15.6px);
 }
-.ytp-delhi-modern .ytp-menuitem-toggle-checkbox {
+.ytp-delhi-modern .ytp-settings-menu .ytp-menuitem-toggle-checkbox {
     height: 14px !important;
     width: 36px !important;
     float: right !important;
@@ -495,13 +515,13 @@ ytd-app[frosted-glass-exp] #guide-spacer,
     -ms-transform: scale(1) !important;
     transform: scale(1) !important;
 }
-.ytp-delhi-modern .ytp-menuitem[aria-disabled="true"] .ytp-menuitem-toggle-checkbox {
+.ytp-delhi-modern .ytp-settings-menu .ytp-menuitem[aria-disabled="true"] .ytp-menuitem-toggle-checkbox {
     opacity: .3 !important;
 }
-.ytp-delhi-modern .ytp-menuitem[aria-checked="true"] .ytp-menuitem-toggle-checkbox {
+.ytp-delhi-modern .ytp-settings-menu .ytp-menuitem[aria-checked="true"] .ytp-menuitem-toggle-checkbox {
   background: #f00 !important;
 }
-.ytp-delhi-modern .ytp-menuitem-toggle-checkbox::after {
+.ytp-delhi-modern .ytp-settings-menu .ytp-menuitem-toggle-checkbox::after {
     content: "" !important;
     position: absolute !important;
     left: -1px !important;
@@ -516,7 +536,7 @@ ytd-app[frosted-glass-exp] #guide-spacer,
     -webkit-transition: all .08s cubic-bezier(.4,0,1,1) !important;
     transition: all .08s cubic-bezier(.4,0,1,1) !important;
 }
-.ytp-delhi-modern .ytp-menuitem[aria-checked="true"] .ytp-menuitem-toggle-checkbox::after {
+.ytp-delhi-modern .ytp-settings-menu .ytp-menuitem[aria-checked="true"] .ytp-menuitem-toggle-checkbox::after {
     background-color: #fff !important;
     -webkit-transform: translateX(16px) !important;
     -ms-transform: translateX(16px) !important;
@@ -542,11 +562,11 @@ ytd-app[frosted-glass-exp] #guide-spacer,
 .ytp-delhi-modern.ytp-fullscreen .ytp-time-display {
     font-size: 20px !important;
 }
-.ytp-delhi-modern.ytp-fullscreen .ytp-play-button {
+.ytp-delhi-modern.ytp-fullscreen .ytp-button.ytp-play-button {
     width: 69px !important;
 }
-.ytp-delhi-modern.ytp-fullscreen .ytp-play-button svg {
-    padding: calc((var(--yt-delhi-big-mode-pill-height, 54px) - 36px)/2) 16.5px !important;
+.ytp-delhi-modern.ytp-fullscreen .ytp-button.ytp-volume-icon svg {
+    padding: 15px !important;
 }
 .ytp-delhi-modern.ytp-fullscreen .ytp-progress-bar {
     height: 8px !important;
@@ -582,12 +602,12 @@ ytd-app[frosted-glass-exp] #guide-spacer,
     -ms-transform: translateX(19.5px) !important;
     transform: translateX(19.5px) !important;
 }
-.ytp-delhi-modern.ytp-fullscreen .ytp-menuitem-toggle-checkbox {
+.ytp-delhi-modern.ytp-fullscreen .ytp-settings-menu .ytp-menuitem-toggle-checkbox {
     height: 21px !important;
     width: 54px !important;
     border-radius: 21px !important;
 }
-.ytp-delhi-modern.ytp-fullscreen .ytp-menuitem-toggle-checkbox::after {
+.ytp-delhi-modern.ytp-fullscreen .ytp-settings-menu .ytp-menuitem-toggle-checkbox::after {
     left: -2px !important;
     top: -1px !important;
     height: 30px !important;
@@ -595,10 +615,68 @@ ytd-app[frosted-glass-exp] #guide-spacer,
     border-radius: 30px !important;
     margin-top: calc(divide(sub(21px, 30px), 2)) !important;
 }
-.ytp-delhi-modern.ytp-fullscreen .ytp-menuitem[aria-checked="true"] .ytp-menuitem-toggle-checkbox::after {
+.ytp-delhi-modern.ytp-fullscreen .ytp-settings-menu .ytp-menuitem[aria-checked="true"] .ytp-menuitem-toggle-checkbox::after {
     -webkit-transform: translateX(24px) !important;
     -ms-transform: translateX(24px) !important;
     transform: translateX(24px) !important;
+}
+
+/* Old Icons */
+.ytp-delhi-modern .ytp-chrome-bottom .ytp-button:not(.ytp-play-button):not(.ytp-volume-icon) svg path {
+    transform: scale(calc(2/3)) !important;
+}
+.ytp-delhi-modern .ytp-chrome-bottom .ytp-button svg path{
+    stroke: #000 !important;
+    stroke-opacity: .15 !important;
+    stroke-width: 2px !important;
+    paint-order: stroke !important;
+}
+/* Play Button */
+[d*="M 17 8.6 L 10.89 4.99 C 9.39 4.11 7.5 5.19 7.5 6.93 C 7.5 6.93 7.5 6.93 7.5 6.93 L 7.5 29.06 C 7.5 30.8 9.39 31.88 10.89 31 C 10.89 31 10.89 31 10.89 31 L 17 27.4 C 17 27.4 17 27.4 17 27.4 C 17 27.4 17 27.4 17 27.4 L 17 8.6 C 17 8.6 17 8.6 17 8.6 C 17 8.6 17 8.6 17 8.6 Z M 17 8.6 L 17 8.6 C 17 8.6 17 8.6 17 8.6 C 17 8.6 17 8.6 17 8.6 V 27.4 C 17 27.4 17 27.4 17 27.4 C 17 27.4 17 27.4 17 27.4 L 33 18 C 33 18 33 18 33 18 C 33 18 33 18 33 18 V 18 L 17 8.6 C 17 8.6 17 8.6 17 8.6 C 17 8.6 17 8.6 17 8.6 Z"] {
+    d: path("M 12,26 18.5,22 18.5,14 12,10 z M 18.5,22 25,18 25,18 18.5,14 z") !important;
+}
+/* Pause Button */
+[d*="M 12.75 4.5 L 9.75 4.5 C 9.15 4.5 8.58 4.73 8.15 5.15 C 7.73 5.58 7.5 6.15 7.5 6.75 L 7.5 29.25 C 7.5 29.84 7.73 30.41 8.15 30.84 C 8.58 31.26 9.15 31.5 9.75 31.5 L 12.75 31.5 C 13.34 31.5 13.91 31.26 14.34 30.84 C 14.76 30.41 15 29.84 15 29.25 L 15 6.75 C 15 6.15 14.76 5.58 14.34 5.15 C 13.91 4.73 13.34 4.5 12.75 4.5 Z M 26.25 4.5 L 23.25 4.5 C 22.65 4.5 22.08 4.73 21.65 5.15 C 21.23 5.58 21 6.15 21 6.75 V 29.25 C 21 29.84 21.23 30.41 21.65 30.84 C 22.08 31.26 22.65 31.5 23.25 31.5 L 26.25 31.5 C 26.84 31.5 27.41 31.26 27.84 30.84 C 28.26 30.41 28.5 29.84 28.5 29.25 V 6.75 L 28.5 6.75 C 28.5 6.15 28.26 5.58 27.84 5.15 C 27.41 4.73 26.84 4.5 26.25 4.5 Z"] {
+    d: path("M 12,26 16,26 16,10 12,10 z M 21,26 25,26 25,10 21,10 z") !important;
+}
+/* Previous Button */
+.ytp-delhi-modern .ytp-prev-button svg path {
+    d: path("m 12,12 h 2 v 12 h -2 z m 3.5,6 8.5,6 V 12 z") !important;
+}
+/* Next Button */
+.ytp-delhi-modern .ytp-next-button svg path {
+    d: path("M 12,24 20.5,18 12,12 V 24 z M 22,12 v 12 h 2 V 12 h -2 z") !important;
+}
+/* Subtitle Button */
+[d*="M21.20 3.01L21 3H3L2.79 3.01C2.30 3.06 1.84 3.29 1.51 3.65C1.18 4.02 .99 4.50 1 5V19L1.01 19.20C1.05 19.66 1.26 20.08 1.58 20.41C1.91 20.73 2.33 20.94 2.79 20.99L3 21H21L21.20 20.98C21.66 20.94 22.08 20.73 22.41 20.41C22.73 20.08 22.94 19.66 22.99 19.20L23 19V5C23.00 4.50 22.81 4.02 22.48 3.65C22.15 3.29 21.69 3.06 21.20 3.01ZM3 19V5H21V19H3ZM8 11H6C5.73 11 5.48 11.10 5.29 11.29C5.10 11.48 5 11.73 5 12C5 12.26 5.10 12.51 5.29 12.70C5.48 12.89 5.73 13 6 13H8C8.26 13 8.51 12.89 8.70 12.70C8.89 12.51 9 12.26 9 12C9 11.73 8.89 11.48 8.70 11.29C8.51 11.10 8.26 11 8 11ZM18 11H12C11.73 11 11.48 11.10 11.29 11.29C11.10 11.48 11 11.73 11 12C11 12.26 11.10 12.51 11.29 12.70C11.48 12.89 11.73 13 12 13H18C18.26 13 18.51 12.89 18.70 12.70C18.89 12.51 19 12.26 19 12C19 11.73 18.89 11.48 18.70 11.29C18.51 11.10 18.26 11 18 11ZM18 15H16C15.73 15 15.48 15.10 15.29 15.29C15.10 15.48 15 15.73 15 16C15 16.26 15.10 16.51 15.29 16.70C15.48 16.89 15.73 17 16 17H18C18.26 17 18.51 16.89 18.70 16.70C18.89 16.51 19 16.26 19 16C19 15.73 18.89 15.48 18.70 15.29C18.51 15.10 18.26 15 18 15ZM12 15H6C5.73 15 5.48 15.10 5.29 15.29C5.10 15.48 5 15.73 5 16C5 16.26 5.10 16.51 5.29 16.70C5.48 16.89 5.73 17 6 17H12C12.26 17 12.51 16.89 12.70 16.70C12.89 16.51 13 16.26 13 16C13 15.73 12.89 15.48 12.70 15.29C12.51 15.10 12.26 15 12 15Z"] {
+    d: path("M11,11 C9.9,11 9,11.9 9,13 L9,23 C9,24.1 9.9,25 11,25 L25,25 C26.1,25 27,24.1 27,23 L27,13 C27,11.9 26.1,11 25,11 L11,11 Z M11,17 L14,17 L14,19 L11,19 L11,17 L11,17 Z M20,23 L11,23 L11,21 L20,21 L20,23 L20,23 Z M25,23 L22,23 L22,21 L25,21 L25,23 L25,23 Z M25,19 L16,19 L16,17 L25,17 L25,19 L25,19 Z") !important;
+}
+[d*="M21 3H3C2.46 3 1.96 3.21 1.58 3.58C1.21 3.96 1 4.46 1 5V19C1 19.53 1.21 20.03 1.58 20.41C1.96 20.78 2.46 21 3 21H21C21.53 21 22.03 20.78 22.41 20.41C22.78 20.03 23 19.53 23 19V5C23 4.46 22.78 3.96 22.41 3.58C22.03 3.21 21.53 3 21 3ZM6 11H8C8.26 11 8.51 11.10 8.70 11.29C8.89 11.48 9 11.73 9 12C9 12.26 8.89 12.51 8.70 12.70C8.51 12.89 8.26 13 8 13H6C5.73 13 5.48 12.89 5.29 12.70C5.10 12.51 5 12.26 5 12C5 11.73 5.10 11.48 5.29 11.29C5.48 11.10 5.73 11 6 11ZM12 11H18C18.26 11 18.51 11.10 18.70 11.29C18.89 11.48 19 11.73 19 12C19 12.26 18.89 12.51 18.70 12.70C18.51 12.89 18.26 13 18 13H12C11.73 13 11.48 12.89 11.29 12.70C11.10 12.51 11 12.26 11 12C11 11.73 11.10 11.48 11.29 11.29C11.48 11.10 11.73 11 12 11ZM16 15H18C18.26 15 18.51 15.10 18.70 15.29C18.89 15.48 19 15.73 19 16C19 16.26 18.89 16.51 18.70 16.70C18.51 16.89 18.26 17 18 17H16C15.73 17 15.48 16.89 15.29 16.70C15.10 16.51 15 16.26 15 16C15 15.73 15.10 15.48 15.29 15.29C15.48 15.10 15.73 15 16 15ZM6 15H12C12.26 15 12.51 15.10 12.70 15.29C12.89 15.48 13 15.73 13 16C13 16.26 12.89 16.51 12.70 16.70C12.51 16.89 12.26 17 12 17H6C5.73 17 5.48 16.89 5.29 16.70C5.10 16.51 5 16.26 5 16C5 15.73 5.10 15.48 5.29 15.29C5.48 15.10 5.73 15 6 15Z"] {
+    d: path("M11,11 C9.89,11 9,11.9 9,13 L9,23 C9,24.1 9.89,25 11,25 L25,25 C26.1,25 27,24.1 27,23 L27,13 C27,11.9 26.1,11 25,11 L11,11 Z M17,17 L15.5,17 L15.5,16.5 L13.5,16.5 L13.5,19.5 L15.5,19.5 L15.5,19 L17,19 L17,20 C17,20.55 16.55,21 16,21 L13,21 C12.45,21 12,20.55 12,20 L12,16 C12,15.45 12.45,15 13,15 L16,15 C16.55,15 17,15.45 17,16 L17,17 L17,17 Z M24,17 L22.5,17 L22.5,16.5 L20.5,16.5 L20.5,19.5 L22.5,19.5 L22.5,19 L24,19 L24,20 C24,20.55 23.55,21 23,21 L20,21 C19.45,21 19,20.55 19,20 L19,16 C19,15.45 19.45,15 20,15 L23,15 C23.55,15 24,15.45 24,16 L24,17 L24,17 Z") !important;
+}
+/* Settings Button */
+.ytp-delhi-modern .ytp-settings-button svg path {
+    d: path( "m 23.94,18.78 c .03,-0.25 .05,-0.51 .05,-0.78 0,-0.27 -0.02,-0.52 -0.05,-0.78 l 1.68,-1.32 c .15,-0.12 .19,-0.33 .09,-0.51 l -1.6,-2.76 c -0.09,-0.17 -0.31,-0.24 -0.48,-0.17 l -1.99,.8 c -0.41,-0.32 -0.86,-0.58 -1.35,-0.78 l -0.30,-2.12 c -0.02,-0.19 -0.19,-0.33 -0.39,-0.33 l -3.2,0 c -0.2,0 -0.36,.14 -0.39,.33 l -0.30,2.12 c -0.48,.2 -0.93,.47 -1.35,.78 l -1.99,-0.8 c -0.18,-0.07 -0.39,0 -0.48,.17 l -1.6,2.76 c -0.10,.17 -0.05,.39 .09,.51 l 1.68,1.32 c -0.03,.25 -0.05,.52 -0.05,.78 0,.26 .02,.52 .05,.78 l -1.68,1.32 c -0.15,.12 -0.19,.33 -0.09,.51 l 1.6,2.76 c .09,.17 .31,.24 .48,.17 l 1.99,-0.8 c .41,.32 .86,.58 1.35,.78 l .30,2.12 c .02,.19 .19,.33 .39,.33 l 3.2,0 c .2,0 .36,-0.14 .39,-0.33 l .30,-2.12 c .48,-0.2 .93,-0.47 1.35,-0.78 l 1.99,.8 c .18,.07 .39,0 .48,-0.17 l 1.6,-2.76 c .09,-0.17 .05,-0.39 -0.09,-0.51 l -1.68,-1.32 0,0 z m -5.94,2.01 c -1.54,0 -2.8,-1.25 -2.8,-2.8 0,-1.54 1.25,-2.8 2.8,-2.8 1.54,0 2.8,1.25 2.8,2.8 0,1.54 -1.25,2.8 -2.8,2.8 l 0,0 z") !important;
+}
+/* Theater Mode Button */
+[d*="M21.20 3.01L21 3H3L2.79 3.01C2.30 3.06 1.84 3.29 1.51 3.65C1.18 4.02 .99 4.50 1 5V19L1.01 19.20C1.05 19.66 1.26 20.08 1.58 20.41C1.91 20.73 2.33 20.94 2.79 20.99L3 21H21L21.20 20.98C21.66 20.94 22.08 20.73 22.41 20.41C22.73 20.08 22.94 19.66 22.99 19.20L23 19V5C23.00 4.50 22.81 4.02 22.48 3.65C22.15 3.29 21.69 3.06 21.20 3.01ZM3 15V5H21V15H3ZM7.87 6.72L7.79 6.79L4.58 10L7.79 13.20C7.88 13.30 7.99 13.37 8.11 13.43C8.23 13.48 8.37 13.51 8.50 13.51C8.63 13.51 8.76 13.48 8.89 13.43C9.01 13.38 9.12 13.31 9.21 13.21C9.31 13.12 9.38 13.01 9.43 12.89C9.48 12.76 9.51 12.63 9.51 12.50C9.51 12.37 9.48 12.23 9.43 12.11C9.37 11.99 9.30 11.88 9.20 11.79L7.41 10L9.20 8.20L9.27 8.13C9.42 7.93 9.50 7.69 9.48 7.45C9.47 7.20 9.36 6.97 9.19 6.80C9.02 6.63 8.79 6.52 8.54 6.51C8.30 6.49 8.06 6.57 7.87 6.72ZM14.79 6.79C14.60 6.98 14.50 7.23 14.50 7.5C14.50 7.76 14.60 8.01 14.79 8.20L16.58 10L14.79 11.79L14.72 11.86C14.57 12.06 14.49 12.30 14.50 12.54C14.51 12.79 14.62 13.02 14.79 13.20C14.97 13.37 15.20 13.48 15.45 13.49C15.69 13.50 15.93 13.42 16.13 13.27L16.20 13.20L19.41 10L16.20 6.79C16.01 6.60 15.76 6.50 15.5 6.50C15.23 6.50 14.98 6.60 14.79 6.79ZM3 19V17H21V19H3Z"] {
+    d: path("m 28,11 0,14 -20,0 0,-14 z m -18,2 16,0 0,10 -16,0 0,-10 z") !important;
+    fill-rule: evenodd !important;
+}
+[d*="M21.20 3.01L21 3H3L2.79 3.01C2.30 3.06 1.84 3.29 1.51 3.65C1.18 4.02 .99 4.50 1 5V19L1.01 19.20C1.05 19.66 1.26 20.08 1.58 20.41C1.91 20.73 2.33 20.94 2.79 20.99L3 21H21L21.20 20.98C21.66 20.94 22.08 20.73 22.41 20.41C22.73 20.08 22.94 19.66 22.99 19.20L23 19V5C23.00 4.50 22.81 4.02 22.48 3.65C22.15 3.29 21.69 3.06 21.20 3.01ZM3 15V5H21V15H3ZM16.87 6.72H16.86L16.79 6.79L13.58 10L16.79 13.20C16.88 13.30 16.99 13.37 17.11 13.43C17.23 13.48 17.37 13.51 17.50 13.51C17.63 13.51 17.76 13.48 17.89 13.43C18.01 13.38 18.12 13.31 18.21 13.21C18.31 13.12 18.38 13.01 18.43 12.89C18.48 12.76 18.51 12.63 18.51 12.50C18.51 12.37 18.48 12.23 18.43 12.11C18.37 11.99 18.30 11.88 18.20 11.79L16.41 10L18.20 8.20L18.27 8.13C18.42 7.93 18.50 7.69 18.49 7.45C18.47 7.20 18.37 6.97 18.20 6.79C18.02 6.62 17.79 6.52 17.55 6.50C17.30 6.49 17.06 6.57 16.87 6.72ZM5.79 6.79C5.60 6.98 5.50 7.23 5.50 7.5C5.50 7.76 5.60 8.01 5.79 8.20L7.58 10L5.79 11.79L5.72 11.86C5.57 12.06 5.49 12.30 5.50 12.54C5.51 12.79 5.62 13.02 5.79 13.20C5.97 13.37 6.20 13.48 6.45 13.49C6.69 13.50 6.93 13.42 7.13 13.27L7.20 13.20L10.41 10L7.20 6.79C7.01 6.60 6.76 6.50 6.5 6.50C6.23 6.50 5.98 6.60 5.79 6.79ZM3 19V17H21V19H3Z"] {
+    d: path("m 26,13 0,10 -16,0 0,-10 z m -14,2 12,0 0,6 -12,0 0,-6 z") !important;
+    fill-rule: evenodd !important;
+}
+/* Play on TV Button */
+.ytp-delhi-modern .ytp-remote-button svg path {
+    d: path("M27,9 L9,9 C7.9,9 7,9.9 7,11 L7,14 L9,14 L9,11 L27,11 L27,25 L20,25 L20,27 L27,27 C28.1,27 29,26.1 29,25 L29,11 C29,9.9 28.1,9 27,9 L27,9 Z M7,24 L7,27 L10,27 C10,25.34 8.66,24 7,24 L7,24 Z M7,20 L7,22 C9.76,22 12,24.24 12,27 L14,27 C14,23.13 10.87,20 7,20 L7,20 Z M7,16 L7,18 C11.97,18 16,22.03 16,27 L18,27 C18,20.92 13.07,16 7,16 L7,16 Z") !important;
+}
+/* Fullscreen Button */
+[d*="M10 3H3V10C3 10.26 3.10 10.51 3.29 10.70C3.48 10.89 3.73 11 4 11C4.26 11 4.51 10.89 4.70 10.70C4.89 10.51 5 10.26 5 10V6.41L9.29 10.70L9.36 10.77C9.56 10.92 9.80 11.00 10.04 10.99C10.29 10.98 10.52 10.87 10.70 10.70C10.87 10.52 10.98 10.29 10.99 10.04C11.00 9.80 10.92 9.56 10.77 9.36L10.70 9.29L6.41 5H10C10.26 5 10.51 4.89 10.70 4.70C10.89 4.51 11 4.26 11 4C11 3.73 10.89 3.48 10.70 3.29C10.51 3.10 10.26 3 10 3ZM20 13C19.73 13 19.48 13.10 19.29 13.29C19.10 13.48 19 13.73 19 14V17.58L14.70 13.29L14.63 13.22C14.43 13.07 14.19 12.99 13.95 13.00C13.70 13.01 13.47 13.12 13.29 13.29C13.12 13.47 13.01 13.70 13.00 13.95C12.99 14.19 13.07 14.43 13.22 14.63L13.29 14.70L17.58 19H14C13.73 19 13.48 19.10 13.29 19.29C13.10 19.48 13 19.73 13 20C13 20.26 13.10 20.51 13.29 20.70C13.48 20.89 13.73 21 14 21H21V14C21 13.73 20.89 13.48 20.70 13.29C20.51 13.10 20.26 13 20 13Z"] {
+    d: path("m 10,16 h 2 v -4 h 4 v -2 h -6 z m 10,-6 v 2 h 4 v 4 h 2 v -6 z m 4,14 h -4 v 2 h 6 V 20 H 24 Z M 12,20 h -2 v 6 h 6 v -2 h -4 z") !important;
+}
+[d*="M3.29 3.29C3.11 3.46 3.01 3.70 3.00 3.94C2.98 4.19 3.06 4.43 3.22 4.63L3.29 4.70L7.58 8.99H5C4.73 8.99 4.48 9.10 4.29 9.29C4.10 9.47 4 9.73 4 9.99C4 10.26 4.10 10.51 4.29 10.70C4.48 10.89 4.73 10.99 5 10.99H11V4.99C11 4.73 10.89 4.47 10.70 4.29C10.51 4.10 10.26 3.99 10 3.99C9.73 3.99 9.48 4.10 9.29 4.29C9.10 4.47 9 4.73 9 4.99V7.58L4.70 3.29L4.63 3.22C4.43 3.06 4.19 2.98 3.94 3.00C3.70 3.01 3.46 3.11 3.29 3.29ZM19 13H13V19C13 19.26 13.10 19.51 13.29 19.70C13.48 19.89 13.73 20 14 20C14.26 20 14.51 19.89 14.70 19.70C14.89 19.51 15 19.26 15 19V16.41L19.29 20.70L19.36 20.77C19.56 20.92 19.80 21.00 20.04 20.99C20.29 20.98 20.52 20.87 20.70 20.70C20.87 20.52 20.98 20.29 20.99 20.04C21.00 19.80 20.92 19.56 20.77 19.36L20.70 19.29L16.41 15H19C19.26 15 19.51 14.89 19.70 14.70C19.89 14.51 20 14.26 20 14C20 13.73 19.89 13.48 19.70 13.29C19.51 13.10 19.26 13 19 13Z"] {
+    d: path("m 10,22 h 4 v 4 h 2 v -6 h -6 v 2 z m 10,4 h 2 v -4 h 4 v -2 h -6 v 6 z m 2,-12 v -4 h -2 v 6 h 6 v -2 h -4 z m -8,0 h -4 v 2 h 6 v -6 h -2 v 4 z") !important;
 }
 
 /* turned off due to max() not being supported in old browsers
