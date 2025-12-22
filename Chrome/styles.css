@@ -545,6 +545,46 @@ ytd-app[frosted-glass-exp] #guide-spacer,
     -ms-transform: translateX(16px) !important;
     transform: translateX(16px) !important;
 }
+.ytp-delhi-modern .ytp-settings-menu {
+    bottom: 61px !important;
+}
+.ytp-delhi-modern .ytp-settings-menu .ytp-panel-menu {
+    padding: 8px 0 !important;
+}
+.ytp-delhi-modern .ytp-settings-menu .ytp-menuitem:not(.ytp-menuitem-with-footer) {
+    height: 40px !important;
+}
+.ytp-delhi-modern .ytp-settings-menu .ytp-menuitem-icon {
+    padding: 0 10px !important;
+}
+.ytp-delhi-modern .ytp-settings-menu .ytp-menuitem-icon svg {
+    height: 24px !important;
+    width: 24px !important;
+}
+.ytp-delhi-modern .ytp-settings-menu .ytp-menuitem-content {
+    padding-right: 15px !important;
+}
+.ytp-delhi-modern .ytp-menuitem-label {
+    font-size: 13px !important;
+    font-weight: 500 !important;
+}
+.ytp-delhi-modern .ytp-settings-menu .ytp-menuitem > *:last-child {
+    font-size: 12px !important;
+    color: #fff !important;
+}
+.ytp-delhi-modern .ytp-settings-menu .ytp-menuitem > *:last-child,
+.ytp-delhi-modern .ytp-settings-menu .ytp-menu-label-secondary {
+    color: #fff !important;
+}
+.ytp-delhi-modern .ytp-menuitem[aria-haspopup="true"] .ytp-menuitem-content {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIj48cGF0aCBkPSJtIDEyLjU5LDIwLjM0IDQuNTgsLTQuNTkgLTQuNTgsLTQuNTkgMS40MSwtMS40MSA2LDYgLTYsNiB6IiBmaWxsPSIjZmZmIiAvPjwvc3ZnPg==) !important;
+    background-repeat: no-repeat !important;
+    background-position: right 9px center !important;
+    background-size: 32px 32px !important;
+    -moz-background-size: 32px 32px !important;
+    -webkit-background-size: 32px 32px !important;
+    padding-right: 38px !important;
+}
 .ytp-delhi-modern [sponsorblock-category="poi_highlight"] {
     background-color: red !important;
 }
@@ -611,10 +651,53 @@ ytd-app[frosted-glass-exp] #guide-spacer,
     border-radius: 30px !important;
     margin-top: calc(divide(sub(21px, 30px), 2)) !important;
 }
+
 .ytp-delhi-modern.ytp-fullscreen .ytp-settings-menu .ytp-menuitem[aria-checked="true"] .ytp-menuitem-toggle-checkbox::after {
     -webkit-transform: translateX(24px) !important;
     -ms-transform: translateX(24px) !important;
     transform: translateX(24px) !important;
+}
+
+.ytp-delhi-modern.ytp-fullscreen .ytp-settings-menu {
+    bottom: 70px !important;
+}
+.ytp-delhi-modern.ytp-fullscreen .ytp-settings-menu .ytp-menuitem:not(.ytp-menuitem-with-footer) {
+    height: 49px !important;
+}
+.ytp-delhi-modern.ytp-fullscreen .ytp-settings-menu .ytp-menuitem-icon {
+    padding: 0 15px !important;
+}
+.ytp-delhi-modern.ytp-fullscreen .ytp-settings-menu .ytp-menuitem-icon svg {
+    height: 36px !important;
+    width: 36px !important;
+}
+.ytp-delhi-modern.ytp-fullscreen .ytp-menuitem-label {
+    font-size: 20px !important;
+}
+.ytp-delhi-modern.ytp-fullscreen .ytp-settings-menu .ytp-menuitem > *:last-child {
+    font-size: 18px !important;
+}
+.ytp-delhi-modern.ytp-fullscreen .ytp-menuitem[aria-haspopup="true"] .ytp-menuitem-content {
+    background-position: right 13px center !important;
+    background-size: 48px 48px !important;
+    -moz-background-size: 48px 48px !important;
+    -webkit-background-size: 48px 48px !important;
+    padding-right: 57px !important;
+}
+.ytp-delhi-modern.ytp-fullscreen .ytp-settings-button.ytp-hd-quality-badge::after,
+.ytp-delhi-modern.ytp-fullscreen .ytp-settings-button.ytp-hdr-quality-badge::after,
+.ytp-delhi-modern.ytp-fullscreen .ytp-settings-button.ytp-4k-quality-badge::after,
+.ytp-delhi-modern.ytp-fullscreen .ytp-settings-button.ytp-5k-quality-badge::after,
+.ytp-delhi-modern.ytp-fullscreen .ytp-settings-button.ytp-8k-quality-badge::after,
+.ytp-delhi-modern.ytp-fullscreen .ytp-settings-button.ytp-3d-badge-grey::after,
+.ytp-delhi-modern.ytp-fullscreen .ytp-settings-button.ytp-3d-badge::after {
+    top: 15px !important;
+    right: 6px !important;
+    padding: 2px !important;
+    border-radius: 1.5px !important;
+    height: 12.8px !important;
+    width: 18.5px !important;
+    background-size: contain !important;
 }
 
 /* Old Icons */
