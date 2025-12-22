@@ -564,7 +564,7 @@ ytd-app[frosted-glass-exp] #guide-spacer,
 .ytp-delhi-modern .ytp-settings-menu .ytp-menuitem-content {
     padding-right: 15px !important;
 }
-.ytp-delhi-modern .ytp-menuitem-label {
+.ytp-delhi-modern .ytp-settings-menu .ytp-menuitem-label {
     font-size: 13px !important;
     font-weight: 500 !important;
 }
@@ -576,7 +576,7 @@ ytd-app[frosted-glass-exp] #guide-spacer,
 .ytp-delhi-modern .ytp-settings-menu .ytp-menu-label-secondary {
     color: #fff !important;
 }
-.ytp-delhi-modern .ytp-menuitem[aria-haspopup="true"] .ytp-menuitem-content {
+.ytp-delhi-modern .ytp-settings-menu .ytp-menuitem[aria-haspopup="true"] .ytp-menuitem-content {
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIj48cGF0aCBkPSJtIDEyLjU5LDIwLjM0IDQuNTgsLTQuNTkgLTQuNTgsLTQuNTkgMS40MSwtMS40MSA2LDYgLTYsNiB6IiBmaWxsPSIjZmZmIiAvPjwvc3ZnPg==) !important;
     background-repeat: no-repeat !important;
     background-position: right 9px center !important;
@@ -671,13 +671,13 @@ ytd-app[frosted-glass-exp] #guide-spacer,
     height: 36px !important;
     width: 36px !important;
 }
-.ytp-delhi-modern.ytp-fullscreen .ytp-menuitem-label {
+.ytp-delhi-modern.ytp-fullscreen .ytp-settings-menu .ytp-menuitem-label {
     font-size: 20px !important;
 }
 .ytp-delhi-modern.ytp-fullscreen .ytp-settings-menu .ytp-menuitem > *:last-child {
     font-size: 18px !important;
 }
-.ytp-delhi-modern.ytp-fullscreen .ytp-menuitem[aria-haspopup="true"] .ytp-menuitem-content {
+.ytp-delhi-modern.ytp-fullscreen .ytp-settings-menu .ytp-menuitem[aria-haspopup="true"] .ytp-menuitem-content {
     background-position: right 13px center !important;
     background-size: 48px 48px !important;
     -moz-background-size: 48px 48px !important;
