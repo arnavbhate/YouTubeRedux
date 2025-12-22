@@ -318,9 +318,11 @@ ytd-app[frosted-glass-exp] #guide-spacer,
     color: #DDDDDD !important;
 }
 .ytp-delhi-modern .ytp-time-display {
+    font-size: 109% !important;
     padding: 0 5px !important;
 }
-.ytp-delhi-modern .ytp-time-wrapper > span {
+.ytp-delhi-modern .ytp-time-wrapper span {
+    font-weight: normal !important;
     color: #DDDDDD !important;
 }
 .ytp-delhi-modern .ytp-heat-map-container {
@@ -615,9 +617,6 @@ ytd-app[frosted-glass-exp] #guide-spacer,
 }
 .ytp-delhi-modern.ytp-fullscreen .ytp-settings-button.ytp-hd-quality-badge::after {
     font-size: 7px !important;
-}
-.ytp-delhi-modern.ytp-fullscreen .ytp-time-display {
-    font-size: 20px !important;
 }
 .ytp-delhi-modern.ytp-fullscreen .ytp-button.ytp-play-button {
     width: 69px !important;
