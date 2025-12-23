@@ -324,6 +324,11 @@ ytd-app[frosted-glass-exp] #guide-spacer,
     font-weight: normal !important;
     color: #DDDDDD !important;
 }
+.ytp-delhi-modern .ytp-miniplayer-ui .ytp-time-wrapper {
+    height: unset !important;
+    line-height: 47px !important;
+    color: rgb(238, 238, 238) !important;
+}
 .ytp-delhi-modern .ytp-time-display {
     font-size: 109% !important;
     padding: 0 5px !important;
@@ -331,6 +336,9 @@ ytd-app[frosted-glass-exp] #guide-spacer,
 .ytp-delhi-modern .ytp-time-wrapper span {
     font-weight: normal !important;
     color: #DDDDDD !important;
+}
+.ytp-delhi-modern .ytp-miniplayer-ui .ytp-time-wrapper span {
+    color: rgb(238, 238, 238) !important;
 }
 .ytp-delhi-modern .ytp-heat-map-container {
     margin-bottom: 0 !important;
@@ -348,6 +356,9 @@ ytd-app[frosted-glass-exp] #guide-spacer,
 .ytp-delhi-modern .ytp-progress-bar-container {
     height: 5px !important;
     bottom: var(--yt-delhi-pill-height, 48px) !important;
+}
+.ytp-delhi-modern .ytp-miniplayer-ui ~ .ytp-progress-bar-container {
+    bottom: -1px !important;
 }
 .ytp-delhi-modern .ytp-chrome-controls {
     height: var(--yt-delhi-pill-height, 48px) !important;
@@ -441,10 +452,10 @@ ytd-app[frosted-glass-exp] #guide-spacer,
     border-radius: 50% !important;
     transform: none !important;
 }
-.ytp-progress-bar .ytp-scrubber-button {
+.ytp-delhi-modern .ytp-progress-bar .ytp-scrubber-button {
     opacity: 0 !important;
 }
-.ytp-progress-bar:hover .ytp-scrubber-button {
+.ytp-delhi-modern .ytp-progress-bar:hover .ytp-scrubber-button {
     opacity: 1 !important;
 }
 .ytp-delhi-modern .ytp-volume-slider-handle {
