@@ -1089,8 +1089,8 @@ ytd-two-column-search-results-renderer tp-yt-paper-button.ytd-subscribe-button-r
 }
 
 .ytSuggestionComponentRoundedSuggestion {
-	border-radius: 0;
-	margin: 0;
+	border-radius: 0 !important;
+	margin: 0 !important;
 	height: 32px !important;
 }
 
