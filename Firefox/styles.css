@@ -318,7 +318,8 @@ ytd-app[frosted-glass-exp] #guide-spacer,
 /* 2025 delhi video controls */
 .ytp-delhi-modern .ytp-time-wrapper {
     background: none !important;
-    height: unset !important;
+    height: var(--yt-delhi-pill-height, 48px) !important;
+    line-height: var(--yt-delhi-pill-height, 48px) !important;
     padding: 0 !important;
     font-weight: normal !important;
     color: #DDDDDD !important;
@@ -334,8 +335,8 @@ ytd-app[frosted-glass-exp] #guide-spacer,
 .ytp-delhi-modern .ytp-heat-map-container {
     margin-bottom: 0 !important;
 }
-.ytp-delhi-modern.ytp-big-mode .ytp-heat-map-container {
-    bottom: 5px !important;
+.ytp-delhi-modern.ytp-fullscreen .ytp-heat-map-container {
+    bottom: 8px !important;
 }
 .ytp-delhi-modern .ytp-heat-map-svg path {
     fill: #ffffff5e !important;
@@ -365,7 +366,9 @@ ytd-app[frosted-glass-exp] #guide-spacer,
 }
 .ytp-delhi-modern .ytp-chrome-bottom .ytp-button {
     padding: 0 2px !important;
+    margin: 0 !important;
 }
+.ytp-delhi-modern .ytp-volume-area,
 .ytp-delhi-modern .ytp-subtitles-button-icon {
     height: 100% !important;
 }
@@ -421,6 +424,7 @@ ytd-app[frosted-glass-exp] #guide-spacer,
 }
 .ytp-delhi-modern .ytp-right-controls {
     padding: 0 !important;
+    height: 100% !important;
 }
 .ytp-delhi-modern .ytp-time-display,
 .ytp-delhi-modern .ytp-chapter-container {
@@ -442,6 +446,9 @@ ytd-app[frosted-glass-exp] #guide-spacer,
 }
 .ytp-progress-bar:hover .ytp-scrubber-button {
     opacity: 1 !important;
+}
+.ytp-delhi-modern .ytp-volume-slider-handle {
+    filter: none !important;
 }
 .ytp-delhi-modern .ytp-volume-slider-handle::before,
 .ytp-delhi-modern .ytp-volume-slider-handle::after {
@@ -727,7 +734,7 @@ ytd-app[frosted-glass-exp] #guide-spacer,
 
 /* Old Icons */
 /* Controls */
-.ytp-delhi-modern .ytp-chrome-bottom .ytp-button:not(.ytp-play-button):not(.ytp-chapter-title) svg path {
+.ytp-delhi-modern .ytp-chrome-bottom .ytp-button:not(.ytp-play-button):not(.ytp-chapter-title):not(.ytp-expand-right-bottom-section-button) svg path {
     scale: calc(2/3) !important;
 }
 .ytp-delhi-modern .ytp-chrome-bottom .ytp-button svg path{
