@@ -363,7 +363,7 @@ ytd-app[frosted-glass-exp] #guide-spacer,
 .ytp-delhi-modern .ytp-chrome-bottom .ytp-button:hover {
     opacity: 1 !important;
 }
-.ytp-delhi-modern .ytp-chrome-bottom .ytp-right-controls .ytp-button {
+.ytp-delhi-modern .ytp-chrome-bottom .ytp-button {
     padding: 0 2px !important;
 }
 .ytp-delhi-modern .ytp-subtitles-button-icon {
@@ -378,7 +378,7 @@ ytd-app[frosted-glass-exp] #guide-spacer,
     margin: 0 !important;
     padding: 0 !important;
 }
-.ytp-delhi-modern .ytp-volume-icon {
+.ytp-delhi-modern .ytp-button.ytp-volume-icon {
     padding: 6px !important;
 }
 .ytp-delhi-modern .ytp-left-controls > .ytp-button,
@@ -398,12 +398,12 @@ ytd-app[frosted-glass-exp] #guide-spacer,
 .ytp-delhi-modern .ytp-prev-button {
     order: -1;
 }
-.ytp-delhi-modern .ytp-play-button,
-.ytp-delhi-modern .ytp-play-button svg {
-    padding: 0 1px !important;
+.ytp-delhi-modern .ytp-button.ytp-play-button {
+    width: 46px !important;
 }
 .ytp-delhi-modern .ytp-play-button-playlist ~ .ytp-next-button {
     display: inline-block !important;
+    padding: 0 !important;
 }
 .ytp-delhi-modern .ytp-chapter-title-prefix {
     display: unset !important;
@@ -418,6 +418,9 @@ ytd-app[frosted-glass-exp] #guide-spacer,
 .ytp-delhi-modern .ytp-left-controls > *,
 .ytp-delhi-modern .ytp-right-controls {
     margin-top: 0px !important;
+}
+.ytp-delhi-modern .ytp-right-controls {
+    padding: 0 !important;
 }
 .ytp-delhi-modern .ytp-time-display,
 .ytp-delhi-modern .ytp-chapter-container {
@@ -626,6 +629,9 @@ ytd-app[frosted-glass-exp] #guide-spacer,
 }
 .ytp-delhi-modern.ytp-fullscreen .ytp-button.ytp-play-button {
     width: 69px !important;
+}
+.ytp-delhi-modern.ytp-fullscreen .ytp-button.ytp-play-button.ytp-play-button-playlist {
+    width: 60px !important;
 }
 .ytp-delhi-modern.ytp-fullscreen .ytp-progress-bar {
     height: 8px !important;
