@@ -360,6 +360,15 @@ ytd-app[frosted-glass-exp] #guide-spacer,
 .ytp-delhi-modern .ytp-miniplayer-ui ~ .ytp-progress-bar-container {
     bottom: -1px !important;
 }
+.ytp-delhi-modern .ytp-timed-markers-container,
+.ytp-delhi-modern .ytp-progress-list {
+    -webkit-transform: scaleY(.6) !important;
+    -ms-transform: scaleY(.6) !important;
+    transform: scaleY(.6) !important;
+}
+.ytp-progress-list {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+}
 .ytp-delhi-modern .ytp-chrome-controls {
     height: var(--yt-delhi-pill-height, 48px) !important;
     line-height: var(--yt-delhi-pill-height, 48px) !important;
@@ -1048,9 +1057,6 @@ ytd-video-primary-info-renderer > [button-renderer] yt-icon {
 }
 .ytp-panel sup {
     color: red;
-}
-.ytp-progress-list {
-    background-color: rgba(255, 255, 255, 0.2) !important;
 }
 .ytp-swatch-background-color {
     background-color: #f00;
